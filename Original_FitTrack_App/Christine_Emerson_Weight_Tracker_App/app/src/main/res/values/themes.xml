@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for light mode. -->
+    <style name="Base.Theme.Christine_Emerson_Weight_Tracker_App" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        name="CustomAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Customize the positive button (Add) -->
+        <item name="colorAccent">@color/button_color</item>
+        <!-- Customize the negative button (Cancel) -->
+        <item name="android:textColorSecondary">@color/button_text_color</item>
+
+    </style>
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">#636363</item>
+        <item name="android:textAppearanceButton">@color/button_text_color</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Other theme attributes -->
+        <item name="android:popupWindowStyle">@style/PopupWindow</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView</item>
+        <!-- Other theme attributes -->
+    </style>
+
+    <style name="PopupWindow" parent="Widget.AppCompat.PopupWindow" />
+
+    <style name="DropDownListView" parent="Widget.AppCompat.ListView.DropDown" />
+
+    <!-- Theme for your app. -->
+    <style name="Theme.Christine_Emerson_Weight_Tracker_App" parent="Base.Theme.Christine_Emerson_Weight_Tracker_App" />
+</resources>

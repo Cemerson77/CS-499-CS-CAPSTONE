@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout Confirmation"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to log out?"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/confirmLogoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:backgroundTint="@color/button_color"
+        android:textColor="#FAF9F9"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/cancelLogoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_color"
+        android:textColor="#FAF9F9"
+        android:text="Cancel"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

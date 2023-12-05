@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/sms_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/alert_icon"
+        android:layout_width="60dp"
+        android:layout_height="46dp"
+        android:layout_alignTop="@+id/message_text"
+        android:layout_alignBottom="@+id/message_text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="14dp"
+        android:contentDescription="@string/alert_icon"
+        android:src="@drawable/ic_alert" />
+
+    <TextView
+        android:id="@+id/message_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/alert_icon"
+        android:padding="16dp"
+        android:text="@string/allow_fittrack_to_send_and_view_sms_messages"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/allowButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/message_text"
+        android:layout_marginTop="12dp"
+        android:text="@string/allow"
+        android:textColor="#007BFF" />
+
+    <Button
+        android:id="@+id/denyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allowButton"
+        android:text="@string/deny"
+        android:textColor="#007BFF" />
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+
+    <permission
+        android:name="com.example.christine_emerson_weight_tracker_app.permission.POST_NOTIFICATIONS"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.christine_emerson_weight_tracker_app.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/main_logo"
+        android:label="FitTrack"
+        android:roundIcon="@drawable/main_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Christine_Emerson_Weight_Tracker_App"
+        tools:targetApi="33">
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id"/>
+
+
+        <activity android:name="com.example.christine_emerson_weight_tracker_app.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.christine_emerson_weight_tracker_app.EditGoalWeightActivity"
+            android:label="Edit Goal Weight" />
+
+        <activity
+                android:name="com.example.christine_emerson_weight_tracker_app.BmiCalculatorActivity"
+                android:label="Bmi Calculator" />
+
+        <activity
+            android:name="com.example.christine_emerson_weight_tracker_app.WelcomeActivity"
+            android:label="Welcome" />
+
+
+        <activity
+            android:name="com.example.christine_emerson_weight_tracker_app.LoginActivity"
+            android:exported="true" />
+
+
+        <activity
+            android:name="com.example.christine_emerson_weight_tracker_app.MainActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.christine_emerson_weight_tracker_app.SignUpActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.example.christine_emerson_weight_tracker_app.WeightRecordActivity"
+            android:exported="true" />
+
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,44 @@
+<!-- Layout for displaying each weight entry in the RecyclerView -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:backgroundTint="@color/black"
+    android:padding="8dp">
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/date"
+        android:textSize="16sp" />
+
+    <!-- Weight -->
+    <TextView
+        android:id="@+id/textViewWeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/weight"
+        android:textSize="16sp" />
+
+    <!-- Edit Button -->
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit"
+        android:backgroundTint="@color/button_color"/>
+
+    <!-- Delete Button -->
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_color"
+        android:text="@string/delete"/>
+
+</LinearLayout>

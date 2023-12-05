@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.christine_emerson_weight_tracker_app.BmiCalculatorActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignBottom="@+id/toolbar2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+        app:srcCompat="@drawable/ico_home_black"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toolbar2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="9dp"
+        android:text="Logout"
+        android:textColor="@color/button_color"
+        android:textSize="16sp"
+        tools:ignore="VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/textLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toolbar2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="318dp"
+        android:layout_marginBottom="20dp"
+        android:text="FitTrack"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        tools:context="com.example.christine_emerson_weight_tracker_app.BmiCalculatorActivity">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="310dp"
+            android:layout_height="101dp"
+            app:srcCompat="@drawable/bmi_img" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:text="BMI Calculator"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  Enter Weight (lb)"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:background="@drawable/edittext_border"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/editTextHeightFeet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="  Feet"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:background="@drawable/edittext_border"/>
+
+            <EditText
+                android:id="@+id/editTextHeightInches"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="  Inches"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:background="@drawable/edittext_border"
+                android:autofillHints="" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:buttonTint="@color/black"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_color"
+            android:text="Calculate BMI"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="16dp"
+            android:text=""
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/weightButton"
+            android:layout_width="344dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/button_color"
+
+            android:text="Add Weight Entry" />
+
+        <Button
+            android:id="@+id/goalWeightButton"
+            android:layout_width="351dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/button_color"
+            android:text="Add Goal Weight" />
+
+    </LinearLayout>
+    </RelativeLayout>

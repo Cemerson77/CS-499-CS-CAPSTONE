@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="196dp"
+            android:layout_marginEnd="62dp"
+            android:layout_marginBottom="619dp"
+            android:text="@string/goal_Weight"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mostRecentGoalWeightTextView"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="136dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="582dp"
+            android:text="123 lbs"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="151dp"
+            android:layout_height="93dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="39dp"
+            android:layout_marginEnd="221dp"
+            android:layout_marginBottom="575dp"
+            android:contentDescription="@string/weightimg"
+            app:srcCompat="@drawable/scale" />
+
+        <TextView
+            android:id="@+id/mostRecentGoalWeight"
+            android:layout_width="151dp"
+            android:layout_height="0dp"
+            android:layout_above="@+id/weight_goals"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="167dp"
+            android:layout_marginEnd="136dp"
+            android:layout_marginBottom="373dp"
+            android:text=" "
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editGoalWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="118dp"
+            android:layout_marginEnd="115dp"
+            android:layout_marginBottom="285dp"
+            android:autofillHints="Goal weight"
+            android:background="@drawable/edittext_border"
+            android:hint="  Enter goal weight"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/saveGoalWeightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="126dp"
+            android:layout_marginEnd="127dp"
+            android:layout_marginBottom="218dp"
+            android:backgroundTint="#03A8F3"
+            android:text="@string/save_goal_weight" />
+
+        <ImageView
+            android:id="@+id/minusGoalWeight"
+            android:layout_width="35dp"
+            android:layout_height="27dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="309dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginBottom="294dp"
+            android:contentDescription="@string/minus_weight"
+            android:src="@drawable/minus" />
+
+        <ImageView
+            android:id="@+id/addGoalWeight"
+            android:layout_width="36dp"
+            android:layout_height="27dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="307dp"
+            android:layout_marginBottom="294dp"
+            android:contentDescription="@string/addweight"
+            android:src="@drawable/add" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="141dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="361dp"
+            android:background="@drawable/edittext_border"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/chooseDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="309dp"
+            android:layout_marginBottom="505dp"
+            android:text="Choose Date"
+            android:textSize="10sp" />
+
+        <GridView
+            android:id="@+id/weight_goals"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittext_border"></GridView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="490dp"
+            android:layout_marginBottom="148dp"
+            android:text="Goals History"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/textLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/toolbar2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="318dp"
+            android:layout_marginBottom="20dp"
+            android:text="FitTrack"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/toolbar2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="-3dp"
+            android:layout_marginBottom="9dp"
+            android:text="Logout"
+            android:textColor="@color/button_color"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_alignBottom="@+id/toolbar2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="78dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/white"
+            app:srcCompat="@drawable/ico_home_black" />
+
+
+</RelativeLayout>

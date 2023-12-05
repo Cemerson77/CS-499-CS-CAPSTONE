@@ -1,0 +1,45 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="#F3F0F0">
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/choose_date"
+        android:textColorHint="#546E7A"
+        android:textSize="16sp" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical|center_horizontal|center|start|end|left|right|top|bottom|clip_vertical|clip_horizontal|fill_vertical|fill_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_border"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="408dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical|center|start|end|left|right|top|bottom|clip_vertical|clip_horizontal|fill_vertical|fill_horizontal"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext_border"
+        android:hint="@string/enter_weight_lb"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:textSize="16sp" />
+</LinearLayout>

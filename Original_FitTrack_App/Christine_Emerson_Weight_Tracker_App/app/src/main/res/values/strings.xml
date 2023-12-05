@@ -1,0 +1,156 @@
+<resources>
+
+    // Login and Registration
+    <string name="add_weight_title">Add Weight Entry</string>
+    <string name="login_subheader">Login to view your events, or register if you don\'t have an account yet.</string>
+    <string name="login_field_username">Username</string>
+    <string name="login_field_password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">Register</string>
+    <string name="warning_text">Username or password incorrect.\nIf you don\'t have an account, press REGISTER.</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="most_recent_goal_weight">Most Recent Goal Weight: %1$s (%2$f)</string>
+
+    <string name="register_header">Register</string>
+    <string name="register_subHeader">Please enter a unique username and secure password.</string>
+    <string name="register_name_not_unique">Your username needs to be unique!</string>
+    <string name="default_notification_channel_id">your_default_channel_id</string>
+
+    // Add Event Screen
+    <string name="add_event_header">Add Event</string>
+    <string name="add_event_subheader">All fields required.</string>
+    <string name="add_event_title_header">Title</string>
+    <string name="add_event_year_header">Year</string>
+    <string name="add_event_month_header">Month</string>
+    <string name="add_event_day_header">Day</string>
+    <string name="add_event_hour_header">Hour</string>
+    <string name="add_event_minute_header">Minute</string>
+    <string name="add_event_description_header">Description</string>
+    <string name="add_event_button_submit">Add</string>
+    <string name="add_event_button_cancel">Cancel</string>
+
+    // View Event Screen
+    <string name="view_event_header">View Event</string>
+    <string name="view_event_title_header">Title: </string>
+    <string name="view_event_date_header">Date: </string>
+    <string name="view_event_desc_header">Description: </string>
+    <string name="view_event_button_edit">Edit</string>
+    <string name="view_event_button_delete">Delete</string>
+    <string name="view_event_button_back">Back</string>
+
+    // Edit Event Screen
+    <string name="edit_event_header">Edit Event</string>
+    <string name="edit_event_subheader">Change whichever fields you need to.</string>
+    <string name="edit_event_button_submit">Update</string>
+    <string name="edit_event_button_cancel">Cancel</string>
+    <string name="name">Name</string>
+    <string name="age">Age:</string>
+    <string name="height_with_unit">Height (%s):</string>
+    <string name="gender">Gender:</string>
+    <string name="preferred_unit">Preferred Unit</string>
+    <string name="save">Save</string>
+    <string name="action_share">Share</string>
+    <string name="action_settings">Settings</string>
+    <string name="settings">Settings</string>
+    <string name="calculate">Calculate</string>
+    <string name="action_home">Home</string>
+    <string name="graph_title">%s\'s Progress</string>
+    <string name="default_graph_title">Your Progress</string>
+    <string name="check_in">Check In</string>
+    <string name="add">Add</string>
+    <string name="today_weight">Today\'s Weight:</string>
+    <string name="calculator">Body Calculator</string>
+    <string name="bmi_calc">BMI Calculator</string>
+    <string name="history">History</string>
+    <string name="about">About</string>
+    <string name="date">Date</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="user_details">Set Personal Details</string>
+    <string name="wipe">Wipe All Data</string>
+    <string name="confirm_title">Wipe All Data</string>
+    <string name="confirm_title_sample_data">Load Sample Data</string>
+    <string name="confirm_desc">Are you sure you want to wipe all data? This includes weights and preferences!\n\nTrackie will restart</string>
+    <string name="confirm_desc_sample_data">Are you sure you want to load sample data? This includes weights and preferences!\n\nTrackie will restart</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="stats_error">Stats and calculations will be available to you after 5 entries\n\nYou can load sample data from the settings menu</string>
+    <string name="enter_a_weight">Enter a weight first</string>
+    <string name="nav_header_error">Have you entered all your personal details?\n\nTo help make our calculations more precise, you can set these in the settings menu.</string>
+    <string name="weight_with_unit">Weight (%s):</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="nav_welcome">Welcome to Trackie %s.\n\nGood to see you back</string>
+    <string name="weight_change_last_week">Over the last week, your average daily weight change is: %s%s</string>
+    <string name="keep_it_up">Keep it up!</string>
+    <string name="keep_pushing">You can do it. Keep pushing!</string>
+    <string name="gain_streak">You are %d days into a weight gain streak!</string>
+    <string name="loss_streak">You are %d days into a weight loss streak!</string>
+    <string name="no_streak">No Current Streak</string>
+    <string name="bmi_main">Your BMI is: %.1f</string>
+    <string name="details">What is a BMI?</string>
+    <string name="underweight">Underweight</string>
+    <string name="normal">Healthy</string>
+    <string name="overweight">Overweight</string>
+    <string name="obese">Obese</string>
+    <string name="extremely_obese">Extremely Obese</string>
+    <string name="bmi_body">"%s, Your BMI indicates that you are %s.\nKeep in mind that this is not an exact representation of your health\n\nFor more information see our details page linked below</string>
+    <string name="goal_weight">Goal Weight:</string>
+    <string name="deficit">Calorie Deficit: </string>
+    <string name="days_result">It will take %s days to reach your goal</string>
+    <string name="body_calc_null">Enter user data first!</string>
+    <string name="activity_level">Activity Level: </string>
+    <string name="share_title">Share your FitTrack Data: </string>
+    <string name="bmi_website">http://healthyweight.health.gov.au/wps/portal/Home/get-started/are-you-a-healthy-weight/bmi/</string>
+    <string name="share_bmi">%s\'s BMI is: %s</string>
+    <string name="share_body">It would take me %d days to reach your goal of %.1f%s given a calorie deficit of %d</string>
+    <string name="github_readme">https://github.com/Cemerson77/CS-360-Mobile-Architect-Programming/master/README.md</string>
+    <string name="github">https://github.com/Cemerson77/CS-360-Mobile-Architect-Programming/</string>
+    <string name="no_data">Welcome to FitTrack , to begin enter data below</string>
+    <string name="load_sample">Load Sample Data</string>
+    <string name="add_weight">Add Weight</string>
+    <string name="weight_activity">Weight Activity</string>
+    <string name="kg_lb">KG / LB</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign up.</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="password">Password</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="todo">TODO</string>
+    <string name="fittrack">FitTrack</string>
+    <string name="username">Username</string>
+    <string name="fitTrack" />
+    <string name="already_a_user_sign_in">Already a user? Sign in.</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="alert_icon">Alert Icon</string>
+    <string name="allow">Allow</string>
+    <string name="allow_fittrack_to_send_and_view_sms_messages">Allow FitTrack to send and view SMS messages?</string>
+    <string name="deny">Deny</string>
+    <string name="choose_date">Choose Date</string>
+    <string name="enter_weight_lb">Enter Weight (lb)</string>
+    <string name="splashscreen">splashscreen</string>
+    <string name="backgroundimg">backgroundImg</string>
+    <string name="sign_up_now">Sign up now!</string>
+    <string name="track_your_weight_with_ease">\'\'Track Your Weight with Ease\'\'</string>
+    <string name="achieve_your_fitness_goals">Achieve your fitness goals with our intuitive weight tracker app. Monitor your progress, set goals, and stay motivated on your journey to a healthier!</string>
+    <string name="login_screen">loginScreen</string>
+    <string name="enter_goal_weight">Enter goal weight</string>
+    <string name="goal_Weight">Goal Weight</string>
+    <string name="save_goal_weight">Save Goal Weight</string>
+    <string name="minus_weight">minus weight</string>
+    <string name="weightimg">weightImg</string>
+    <string name="addweight">addWeight</string>
+    <string name="app_name">Navigation Drawer</string>
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="error_required_fields">Email and password are required</string>
+    <string name="error_invalid_credentials">Invalid username or password</string>
+    <string name="recent_goal_weight">"Recent Goal Weight: "</string>
+    <string name="add_weight_entry">Add Weight Entry</string>
+
+
+</resources>
